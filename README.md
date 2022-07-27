@@ -1,8 +1,52 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Features
+
+- [Typescript](https://www.typescriptlang.org/)
+- [@reduxjs/toolkit](https://redux-toolkit.js.org/) for redux development
+- [axios](https://axios-http.com/) as http client
+- [next-intl](https://github.com/amannn/next-intl) for managing translations, date, time and number formatting
+- [swr](https://swr.vercel.app/) for http cache invalidation strategy
+- [tailwind](https://tailwindcss.com/) as utility-first CSS framework
+- [prettier](https://prettier.io/) for code formatting
+- [universal-cookie](https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie) for managing cookies in both server side and client side by
+- VS Code debugging
+
 ## Getting Started
 
-First, run the development server:
+If you want to generate your types from OpenApi json file set your file address at package.json "api" script then run:
+
+```bash
+npm run api
+# or
+yarn api
+```
+
+To Format your code with Prettier run:
+
+```bash
+npm run format
+# or
+yarn format
+```
+
+To Format + Lint and type check your code just run:
+
+```bash
+npm run ci
+# or
+yarn ci
+```
+
+Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -14,7 +58,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
