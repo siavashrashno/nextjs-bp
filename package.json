@@ -12,6 +12,7 @@
     "ci": "next lint && prettier --no-error-on-unmatched-pattern --write ./**/*.{ts,tsx,scss,css,json} && tsc",
     "api": "swagger-typescript-api --no-client --modular --responses --extract-request-params -p http://businesscircleapi.azurewebsites.net/swagger/v1/swagger.json -o ./types/api"
   },
+  "lint-staged": {},
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "axios": "^0.27.2",
