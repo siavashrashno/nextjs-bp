@@ -36,7 +36,7 @@ module.exports = {
       addBase({
         body: {
           "background-color": theme("colors.background"),
-          color: theme("colors.primary"),
+          color: "black",
         },
 
         h1: { fontSize: ["2.3125rem", "1.11"], fontWeight: "700" },

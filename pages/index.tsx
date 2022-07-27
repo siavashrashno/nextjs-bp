@@ -19,3 +19,4 @@ const HomePage: PageWithLayout<Props> = ({}) => {
 };
 
 HomePage.getLayout = (page, props) => getLayout(page, { ...props }, {});
+export default HomePage;
