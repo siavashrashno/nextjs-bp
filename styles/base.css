@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+html,
+body {
+  font-weight: 400;
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  direction: ltr;
+  cursor: default;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1rem;
+}
+*,
+*:before,
+*:after {
+  font-family: inherit;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+svg {
+  text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 992px) {
+  .sticky-box {
+    position: inherit !important;
+    top: 0 !important;
+  }
+}
