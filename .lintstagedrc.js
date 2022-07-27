@@ -6,7 +6,7 @@ const buildEslintCommand = (filenames) =>
     .join(" --file ")}`;
 const buildPrettierCommand = (filenames) =>
   `prettier --no-error-on-unmatched-pattern --write ./**/${filenames} && tsc`;
-const buildTsCommand = (filenames) => `tsc --no-Emit`;
+const buildTsCommand = (filenames) => `tsc --noEmit`;
 
 module.exports = {
   "*.{ts,tsx,js,jsx,scss,css,json}": [buildPrettierCommand],

@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Home: React.FC<Props> = () => {
-  return <div className=""></div>;
+  return <div className="">salam</div>;
 };
 
 export default Home;
