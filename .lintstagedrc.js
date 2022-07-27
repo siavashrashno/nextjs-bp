@@ -4,10 +4,12 @@ const buildEslintCommand = (filenames) =>
   `next lint --fix --file ${filenames
     .map((f) => path.relative(process.cwd(), f))
     .join(" --file ")}`;
-const buildPrettierAndTypeCommand = (filenames) =>
+const buildPrettierCommand = (filenames) =>
   `prettier --no-error-on-unmatched-pattern --write ./**/${filenames} && tsc`;
+const buildTsCommand = (filenames) => `tsc --no-Emit`;
 
 module.exports = {
-  "*.{ts,tsx,js,jsx,scss,css,json}": [buildPrettierAndTypeCommand],
+  "*.{ts,tsx,js,jsx,scss,css,json}": [buildPrettierCommand],
   "*.{ts,tsx,js,jsx}": [buildEslintCommand],
+  "*.{ts,tsx}": [buildTsCommand],
 };
